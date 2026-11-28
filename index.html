@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tropsi-X-Kernel for OnePlus Kona – 8 / 8 Pro / 8T / 9R</title>
+<meta name="description" content="Custom kernel for OnePlus Kona (SM8250): OnePlus 8, 8 Pro, 8T and 9R on OxygenOS 13.1 &amp; 14. BakaSU, SUSFS, NoMount and Tropsi Flasher.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="TropsPk">
+<meta name="theme-color" content="#060506">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://tropspk.github.io/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tropsi-X-Kernel">
+<meta property="og:title" content="Tropsi-X-Kernel for OnePlus Kona – 8, 8 Pro, 8T &amp; 9R">
+<meta property="og:description" content="Built on the latest OEM source for OxygenOS 13.1 &amp; 14. BakaSU, SUSFS, NoMount and Tropsi Flasher.">
+<meta property="og:url" content="https://tropspk.github.io/">
+<meta property="og:image" content="https://tropspk.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tropsi-X-Kernel – Where Stability Meets Speed">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tropsi-X-Kernel for OnePlus Kona – 8, 8 Pro, 8T &amp; 9R">
+<meta name="twitter:description" content="Built on the latest OEM source for OxygenOS 13.1 &amp; 14. BakaSU, SUSFS, NoMount and Tropsi Flasher.">
+<meta name="twitter:image" content="https://tropspk.github.io/og.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","name":"Tropsi-X-Kernel","alternateName":"Tropsi X Kernel","url":"https://tropspk.github.io/"},
+{"@type":"SoftwareApplication","name":"Tropsi-X-Kernel","applicationCategory":"UtilitiesApplication","operatingSystem":"Android (OxygenOS 13.1, OxygenOS 14)","description":"Custom Linux 4.19 kernel for OnePlus Kona (SM8250): OnePlus 8, OnePlus 8 Pro, OnePlus 8T and OnePlus 9R, built on the latest OEM source. Includes BakaSU, SUSFS, NoMount and Baseband Guard.","url":"https://tropspk.github.io/","downloadUrl":"https://github.com/TropsPk/Tropsi_X_Kernel_SM8250/releases/latest","codeRepository":"https://github.com/TropsPk/Tropsi_X_Kernel_SM8250","license":"https://www.gnu.org/licenses/old-licenses/gpl-2.0.html","author":{"@type":"Person","name":"TropsPk","url":"https://github.com/TropsPk","sameAs":["https://github.com/TropsPk","https://t.me/TropsiXKernelUpdates"]},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+{"@type":"MobileApplication","name":"Tropsi Flasher","applicationCategory":"UtilitiesApplication","operatingSystem":"Android (root required)","description":"Tropsi Flasher: Flash. Manage. Control. An Android flashing utility for kernel and recovery ZIPs and partition images, with kernel partition backup and restore, dmesg and logcat logging.","downloadUrl":"https://github.com/TropsPk/TropsiFlasher/releases/download/r1/Tropsi.Flasher.apk","author":{"@type":"Person","name":"TropsPk","url":"https://github.com/TropsPk","sameAs":["https://github.com/TropsPk","https://t.me/TropsiXKernelUpdates"]},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Which OnePlus phones does Tropsi-X-Kernel support?","acceptedAnswer":{"@type":"Answer","text":"OnePlus 8, OnePlus 8 Pro, OnePlus 8T and OnePlus 9R."}},
+{"@type":"Question","name":"Which ROMs and Android versions work?","acceptedAnswer":{"@type":"Answer","text":"Stock OxygenOS 13.1 (A13) and OxygenOS 14 (A14), and custom ROMs on A13 and A14. Newer custom ROMs and port ROMs are not supported yet."}},
+{"@type":"Question","name":"What is Tropsi Flasher?","acceptedAnswer":{"@type":"Answer","text":"An Android flashing utility by TropsPk. It flashes kernel and recovery ZIPs and partition images, and can back up and restore the kernel partition. Root is required."}},
+{"@type":"Question","name":"Which root options does Tropsi-X-Kernel include?","acceptedAnswer":{"@type":"Answer","text":"BakaSU, SUSFS, NoMount and Baseband Guard, with KernelSU Official, KOWSU and BakaSU managers."}},
+{"@type":"Question","name":"How can I support Tropsi-X-Kernel?","acceptedAnswer":{"@type":"Answer","text":"Donations are optional. You can send USDT on the TRON (TRC20) network to the address in the Support section."}},
+{"@type":"Question","name":"Where do I get help?","acceptedAnswer":{"@type":"Answer","text":"Post in the Telegram discussion group with your device, ROM and firmware version."}}]}]}
+</script>
+<style>
+:root{color-scheme:dark;--bg:#060506;--card:rgba(255,255,255,.045);--text:#f5f0f0;--muted:#b9a9ac;--accent:#ff3040;--line:rgba(255,255,255,.1);--glow:rgba(255,42,58,.38);--aura:rgba(255,106,40,.15);--grid:rgba(255,255,255,.045);--b1:#c40e1d;--b2:#c93a0c;--ok:#4ade80;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:12px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:-15%;z-index:-2;pointer-events:none;background:radial-gradient(38% 32% at 75% 10%,var(--glow),transparent 70%),radial-gradient(34% 30% at 12% 55%,var(--aura),transparent 72%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(75% 55% at 50% 12%,#000,transparent);mask-image:radial-gradient(75% 55% at 50% 12%,#000,transparent)}
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+a{color:var(--accent)}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
+.gl{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:inset 0 1px 0 rgba(255,255,255,.07);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:-.3px}
+.mk{width:32px;height:32px;flex:none}
+.nl{display:flex}
+.nl a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.92rem;padding:8px 13px;border-radius:999px}
+.nl a:hover{color:var(--text);background:var(--card)}
+.hero{text-align:center;padding-top:8px;animation:up .8s ease both}
+.ban{border-radius:24px;padding:2px;background:linear-gradient(135deg,var(--accent),transparent 38%,var(--b2));box-shadow:0 0 90px var(--glow)}
+.ban img{display:block;width:100%;height:auto;border-radius:22px}
+h1{margin:30px 0 8px;font-size:clamp(1.7rem,5.4vw,2.8rem);line-height:1.12;letter-spacing:-.035em}
+h1 b{color:var(--accent)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){h1 b{background:linear-gradient(100deg,var(--text),var(--accent) 60%,#ff8a3d);-webkit-background-clip:text;background-clip:text;color:transparent}}
+.sub{max-width:600px;margin:0 auto 24px;color:var(--muted);font-size:1.05rem}
+.sub strong{color:var(--text)}
+.row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:0 20px;border-radius:999px;font:700 .92rem system-ui,sans-serif;text-decoration:none;color:var(--text);border:1px solid var(--line);background:var(--card);cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{color:#fff;border-color:transparent;background:linear-gradient(95deg,var(--b1),var(--b2));box-shadow:0 10px 30px var(--glow)}
+section{padding-top:58px}
+h2{display:flex;align-items:center;gap:10px;margin:0 0 20px;font-size:clamp(1.3rem,4vw,1.6rem);letter-spacing:-.02em}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+table{width:100%;border-collapse:collapse}
+th{font:700 .72rem ui-monospace,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:left;padding:16px 22px 12px}
+td{padding:15px 22px;border-top:1px solid var(--line)}
+td code{font:600 .88rem ui-monospace,Menlo,Consolas,monospace;color:var(--muted)}
+th:last-child,td:last-child{text-align:right;white-space:nowrap}
+.ok{color:var(--ok);font-weight:700}
+.rows>div{display:flex;gap:14px;align-items:center;padding:15px 22px;border-top:1px solid var(--line)}
+.rows>div:first-child{border-top:0}
+.rows span{font-size:1.2rem;flex:none}
+.note{margin-top:14px;padding:16px 22px;color:var(--muted)}
+.note p{margin:0}
+.note p+p{margin-top:6px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tile{padding:22px 10px;text-align:center;font-weight:700;transition:transform .25s,border-color .25s,box-shadow .25s}
+.tile:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 14px 40px var(--glow)}
+.tile i{display:block;font-style:normal;font-size:1.7rem;margin-bottom:6px}
+.tile small{display:block;color:var(--muted);font-weight:600}
+.mg{margin:14px 0;color:var(--muted)}
+.mg strong{color:var(--text)}
+.bk{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:24px 26px}
+.bk h3{margin:0 0 8px;font-size:1.15rem}
+.bk ol{margin:0;padding-left:20px;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.opt{display:flex;flex-direction:column;padding:28px}
+.opt.best{border-color:var(--accent);box-shadow:0 0 60px var(--glow),inset 0 1px 0 rgba(255,255,255,.07)}
+.eb{font:700 .72rem ui-monospace,Menlo,Consolas,monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.opt h3{margin:0 0 4px;font-size:1.35rem;letter-spacing:-.02em}
+.opt>p{margin:0 0 18px;color:var(--muted);font-weight:600}
+.opt ul,.opt ol{margin:0 0 24px;padding:0;list-style:none;display:grid;gap:11px}
+.opt ol{counter-reset:s}
+.opt li{display:flex;gap:12px;align-items:flex-start}
+.opt ul li::before{content:"✅";flex:none}
+.opt ol li{counter-increment:s}
+.opt ol li::before{content:counter(s);flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.8rem;background:linear-gradient(135deg,var(--b1),var(--b2))}
+.opt .btn{margin-top:auto;align-self:flex-start}
+.warn{margin-top:16px;color:var(--muted);font-size:.93rem}
+.tg a{display:block;padding:22px 24px;text-decoration:none;color:var(--text);transition:transform .25s,border-color .25s}
+.tg a:hover{transform:translateY(-3px);border-color:var(--accent)}
+.tg b{display:flex;justify-content:space-between;font-size:1.1rem}
+.tg b::after{content:"↗";color:var(--accent)}
+.tg span{color:var(--muted)}
+.sup{padding:28px;border-color:var(--accent);box-shadow:0 0 60px var(--glow),inset 0 1px 0 rgba(255,255,255,.07)}
+.sup p{margin:0 0 14px;color:var(--muted)}
+.ad{display:flex;gap:10px;align-items:stretch}
+.ad code{flex:1;min-width:0;display:flex;align-items:center;padding:12px 16px;border-radius:14px;border:1px dashed var(--line);font:600 .9rem ui-monospace,Menlo,Consolas,monospace;overflow-wrap:anywhere;word-break:break-all}
+.ad .btn{flex:none}
+.faq details{margin-bottom:10px;overflow:hidden}
+summary{cursor:pointer;font-weight:700;padding:16px 20px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-size:1.3rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0;padding:0 20px 18px;color:var(--muted)}
+footer{margin-top:64px;padding:30px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer h3{margin:0 0 10px;color:var(--text);font-size:1rem}
+footer p{margin:6px 0}
+@media (max-width:760px){.g4{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.bk{flex-direction:column;align-items:flex-start}.logo span{display:none}.nl a{padding:8px 10px}section{padding-top:46px}.ad{flex-direction:column;align-items:stretch}.ad .btn{align-self:flex-start}th,td{padding-left:16px;padding-right:16px}.nl a.hm{display:none}.gl{-webkit-backdrop-filter:none;backdrop-filter:none}}
+@media (prefers-reduced-motion:reduce){*,::before,::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.row{gap:10px}
+.nl a.don{color:#fff;background:linear-gradient(95deg,var(--b1),var(--b2));margin-left:6px}
+.nl a.don:hover{color:#fff;filter:brightness(1.12)}
+table{table-layout:auto}
+.gl:has(>table){overflow:hidden}
+@media (max-width:760px){
+.gl table,.gl tbody{display:block;width:100%}
+thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+tr{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:12px;row-gap:2px;padding:14px 18px;border-top:1px solid var(--line)}
+tr:first-child{border-top:0}
+td{padding:0!important;border:0!important;text-align:left!important;white-space:normal}
+td:nth-child(1){grid-column:1;grid-row:1}
+td:nth-child(2){grid-column:1;grid-row:2}
+td:nth-child(3){grid-column:2;grid-row:1/3;text-align:right!important;white-space:nowrap}
+}
+</style>
+</head>
+<body>
+<div class="w">
+<header>
+<nav aria-label="Main">
+<a class="logo" href="#top"><svg class="mk" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cf0f1f"/><stop offset="1" stop-color="#d9400f"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#g)"/><path d="M10 9l12 14M22 9L10 23" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg><span>Tropsi-X-Kernel</span></a>
+<div class="nl"><a class="hm" href="#devices">Devices</a><a class="hm" href="#root">Root</a><a href="#flash">Flash</a><a class="don" href="#support">❤️ Donate</a></div>
+</nav>
+</header>
+<main>
+<section class="hero" id="top" style="padding-top:8px">
+<div class="ban"><img src="banner.webp" width="1672" height="941" fetchpriority="high" alt="Tropsi-X-Kernel – Where Stability Meets Speed: custom kernel for OnePlus Kona (OnePlus 8, 8 Pro, 8T, 9R)"></div>
+<h1><b>Tropsi-X-Kernel</b> for OnePlus Kona</h1>
+<p class="sub">Built on the <strong>latest OEM source</strong> for <strong>OxygenOS 13.1 &amp; OxygenOS 14</strong></p>
+<div class="row">
+<a class="btn p" href="#support">❤️ Donate</a>
+<a class="btn" href="#flash">⚡ How to flash</a>
+</div>
+</section>
+
+<section id="devices">
+<h2><span aria-hidden="true">📱</span>Supported Devices</h2>
+<div class="gl"><table>
+<thead><tr><th>Device</th><th>Codename</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><b>OnePlus 8</b></td><td><code>instantnoodle</code></td><td class="ok">✅ Supported</td></tr>
+<tr><td><b>OnePlus 8 Pro</b></td><td><code>instantnoodlep</code></td><td class="ok">✅ Supported</td></tr>
+<tr><td><b>OnePlus 8T</b></td><td><code>kebab</code></td><td class="ok">✅ Supported</td></tr>
+<tr><td><b>OnePlus 9R</b></td><td><code>lemonades</code></td><td class="ok">✅ Supported</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="roms">
+<h2><span aria-hidden="true">🧩</span>Supported ROMs</h2>
+<div class="gl rows">
+<div><span>✅</span>Stock OxygenOS 13.1 (A13) &amp; OxygenOS 14 (A14)</div>
+<div><span>✅</span>Custom ROMs on A13 / A14</div>
+<div><span>⏳</span>Newer custom ROMs &amp; port ROMs: not supported yet</div>
+</div>
+<div class="gl note"><p>💡 The kernel follows the latest stock source with no custom ROM adaptions.</p><p>🔜 Custom ROM support is coming soon.</p></div>
+</section>
+
+<section id="root">
+<h2><span aria-hidden="true">🔐</span>Root</h2>
+<div class="g4">
+<div class="gl tile"><i>🛡️</i>BakaSU</div>
+<div class="gl tile"><i>👻</i>SUSFS<small>v2.4.0</small></div>
+<div class="gl tile"><i>📂</i>NoMount</div>
+<div class="gl tile"><i>📡</i>Baseband Guard</div>
+</div>
+<p class="mg">🧰 Managers: <strong>KernelSU Official</strong> · <strong>KOWSU</strong> · <strong>BakaSU</strong></p>
+<div class="gl bk">
+<div><h3>📲 BakaSU Manager (official)</h3><ol><li>Download the zip</li><li>Extract it</li><li>Install the arm64 APK</li></ol></div>
+<a class="btn p" href="https://nightly.link/Baka-SU/BakaSU/workflows/build-manager/main/Manager-release.zip">⬇️ Get BakaSU Manager</a>
+</div>
+</section>
+
+<section id="flash">
+<h2><span aria-hidden="true">📥</span>How to Flash</h2>
+<div class="two">
+<div class="gl opt best">
+<div class="eb">Recommended · Root required</div>
+<h3>⚡ Flash via Tropsi Flasher</h3>
+<p>Easy to flash and use</p>
+<ul><li>Kernel ZIP and recovery ZIP packages</li><li>Boot, recovery and vbmeta images</li><li>Kernel partition backup and restore</li><li>dmesg and logcat logging</li></ul>
+<a class="btn p" href="https://github.com/TropsPk/TropsiFlasher/releases/download/r1/Tropsi.Flasher.apk">⬇️ Get Tropsi Flasher</a>
+</div>
+<div class="gl opt">
+<div class="eb">Classic · No root needed</div>
+<h3>🔧 Flash via Recovery</h3>
+<p>Works with the AnyKernel3 zip</p>
+<ol><li>Download the AnyKernel3 zip</li><li>Back up your boot and dtbo</li><li>Boot to recovery and flash the zip</li><li>Reboot</li></ol>
+<a class="btn p" href="https://github.com/TropsPk/Tropsi_X_Kernel_SM8250/releases/latest">⬇️ Get kernel zip</a>
+</div>
+</div>
+<p class="warn">⚠️ Use files compatible with your device, verify the target partition, and keep backups before flashing.</p>
+</section>
+
+<section id="support">
+<h2><span aria-hidden="true">❤️</span>Support the Project</h2>
+<div class="gl sup">
+<p>Enjoying Tropsi-X-Kernel? You can support its development. This is optional.</p>
+<div class="ad"><code id="ad">TTL3HHUeyfDTXZ5RFqDr4Q379f8DXUJtjb</code><button class="btn" id="cp" type="button">Copy</button></div>
+<p style="margin:12px 0 0;font-size:.93rem">USDT (TRC20) · ⚠️ Send only USDT on the <strong>TRON (TRC20)</strong> network.</p>
+</div>
+</section>
+
+<section id="telegram">
+<h2><span aria-hidden="true">💬</span>Tropsi-X-Kernel on Telegram</h2>
+<div class="two tg">
+<div class="gl"><a href="https://t.me/TropsiXKernelUpdates"><b>📢 Updates channel</b><span>Every new release is posted here first</span></a></div>
+<div class="gl"><a href="https://t.me/TropsiXKernel"><b>💬 Discussion group</b><span>Kernel discussion, help and support</span></a></div>
+</div>
+<p class="warn">🆘 Kernel not working on your device? Post in the group with your <strong>device</strong>, <strong>ROM</strong> and <strong>firmware version</strong>.</p>
+</section>
+
+<section id="faq">
+<h2><span aria-hidden="true">❓</span>FAQ</h2>
+<div class="faq">
+<details class="gl"><summary>Which OnePlus phones does Tropsi-X-Kernel support?</summary><p>OnePlus 8, OnePlus 8 Pro, OnePlus 8T and OnePlus 9R.</p></details>
+<details class="gl"><summary>Which ROMs and Android versions work?</summary><p>Stock OxygenOS 13.1 (A13) and OxygenOS 14 (A14), and custom ROMs on A13 and A14. Newer custom ROMs and port ROMs are not supported yet.</p></details>
+<details class="gl"><summary>What is Tropsi Flasher?</summary><p>An Android flashing utility by TropsPk. It flashes kernel and recovery ZIPs and partition images, and can back up and restore the kernel partition. Root is required.</p></details>
+<details class="gl"><summary>Which root options does Tropsi-X-Kernel include?</summary><p>BakaSU, SUSFS, NoMount and Baseband Guard, with KernelSU Official, KOWSU and BakaSU managers.</p></details>
+<details class="gl"><summary>How can I support Tropsi-X-Kernel?</summary><p>Donations are optional. You can send USDT on the TRON (TRC20) network to the address in the Support section.</p></details>
+<details class="gl"><summary>Where do I get help?</summary><p>Post in the <a href="https://t.me/TropsiXKernel">Telegram discussion group</a> with your device, ROM and firmware version.</p></details>
+</div>
+</section>
+</main>
+</div>
+<footer>
+<div class="w">
+<h3>🙏 Credits</h3>
+<p><strong>JackA1ltman</strong> (<a href="https://github.com/JackA1ltman/NonGKI_Kernel_Build_2nd">NonGKI_Kernel_Build_2nd</a>): kernel build system · <strong>OnePlus</strong>: OEM kernel source · <strong>libxzr, toraidl, DawfukFR, ppajda</strong>: reference kernels · <strong>simonpunk</strong>: SUSFS</p>
+<p><a href="#support">❤️ Donate</a> · <a href="https://github.com/TropsPk/Tropsi_X_Kernel_SM8250">Kernel source</a> · <a href="https://github.com/TropsPk/TropsiFlasher">Tropsi Flasher</a> · <a href="https://github.com/TropsPk/Tropsi-Builder">Tropsi-Builder</a></p>
+<p>Not affiliated with OnePlus or Qualcomm. Flash at your own risk.</p>
+</div>
+</footer>
+<script>
+document.getElementById('cp').onclick=async function(){var n=document.getElementById('ad'),b=this;try{await navigator.clipboard.writeText(n.textContent.trim())}catch(e){var r=document.createRange();r.selectNodeContents(n);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(_){}}b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy'},1800)};
+</script>
+</body>
+</html>
